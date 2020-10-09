@@ -107,6 +107,8 @@ class Signup extends Component {
         if(this.validateForm(this.state.errors)) {
           localStorage.setItem('rememberMe',  this.state.rememberMe );
           localStorage.setItem('username',  this.state.rememberMe?this.state.username:'');
+          alert("Congratulations!!! Your account created successfully.");
+          console.log('valid Form')
           }else{
             console.error('Invalid Form')
           }
