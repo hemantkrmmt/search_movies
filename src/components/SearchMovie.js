@@ -115,8 +115,8 @@ class SearchMovie extends React.Component {
          <Movies data = {this.state.data} />
         {this.state.total_pages>1?
          <footer className="footer">
-          <button onClick={this.previousPage} className="buttons">Previous Page</button>
-          <button onClick={this.nextPage} className="buttons">Next Page</button>
+          {this.state.page_num!=1? <button onClick={this.previousPage} className="buttons">Previous Page</button>:""}
+          {this.state.page_num!=this.state.total_pages? <button onClick={this.nextPage} className="buttons">Next Page</button>:""}
          </footer>
          :""}
       </>  
