@@ -1,0 +1,113 @@
+
+.titleBar{
+ display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  
+}
+
+.titleBar> div {
+  display: flex;
+  color:white;
+  vertical-align: middle;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.titleBar> div:nth-child(3) {
+  float:right;
+  min-width: 300px;
+}
+
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  display: flex;
+  float: left;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height:200px;
+  border: 1px solid gray;
+  margin:10px;
+  cursor: pointer;
+  flex-direction: column;
+  vertical-align: bottom;
+  justify-content: center;
+  
+}
+
+
+.movie:hover{
+  background: teal;
+}
+
+.searchForm{
+  text-align: center;
+ 
+}
+
+.movie-title{
+  font-weight:bold;
+  text-align:center;
+  padding:5px;  
+  
+}
+.movie-list {
+  padding: 1%;
+  display: block;
+  overflow: scroll;
+  width: 45%;
+  text-align: center;
+  margin-left: 28%;
+}
+
+
+
+.SelectedMovieBack{
+  cursor:pointer;
+  font-size: 48px;;
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+.searchForm input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background: url(../src/assets/searchicon.png) center center/cover no-repeat;
+  background-color: white;
+  background-size:25px;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.buttons{
+  
+  width: fit-content;
+    border-radius: 10px;
+    background-color: #27cfc3;
+    outline: none;
+}
+
+.footer{
+  text-align:center;
+}
