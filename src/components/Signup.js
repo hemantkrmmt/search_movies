@@ -77,7 +77,7 @@ class Signup extends Component {
             
             case "passwordrepeat":
                 errors.passwordrepeat =
-                    value != this.state.passwordrepeat
+                    value != this.state.password
                         ? 'Passwords must match'
                         : '';
                 break;  
